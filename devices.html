@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+            var elem = document.getElementById("app-side-nav");
+            if (elem.classList.value.indexOf('d-none') > -1) {
+                elem.classList.remove('d-none');
+                elem.classList.remove('d-sm-none');
+            }
+            else {
+                elem.classList.add('d-none');
+                elem.classList.add('d-sm-none');
+            }
+        }
+
+        function closeNav() {
+            var elem = document.getElementById("app-side-nav");
+            elem.classList.add('d-none');
+            elem.classList.add('d-sm-none');
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default fixed-top pt-0">
+        <div class="container-fluid app-nav-bar rounded pt-2 pb-2">
+            <div class="navbar-header">
+                <span class="d-lg-none d-md-none nav-menu" onclick="openNav()">☰</span>
+                <a class="navbar-brand" href="index.html">
+                    PAKMOBILEZONE
+                </a>
+            </div>
+            <ul class="nav navbar-nav" style="display: none;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <div class="nav navbar-nav navbar-right" style="display: none;">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <li>
+
+                    <!-- <a>
+                        <input type="search" placeholder="What you are looking for?" />
+                        <button type="button" class="btn btn-xs btn-default"><i class="fa fa-search"></i></button>
+                    </a> -->
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app-side-nav" class="sidenav col-md-2 col-6 ml-1 d-lg-block d-md-block d-sm-none d-none rounded">
+        <i class="closenav fa fa-close d-lg-none d-md-none" onclick="closeNav()"></i>
+        <div class="side-nav-head first">Brands</div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="devices.html">Realme <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">QMobile <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Oppo <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">OnePlus <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Nokia <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Motorola <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Samsung <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Xiaomi <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Vivo <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Tecno <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Sony Ericsson <i class="fa fa-angle-right mt-1"></i></a>
+            </li>
+            <li class="list-group-item"><a href="devices.html">Sony <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Asus <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Apple <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Meizu <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">LG <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Lenovo <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Microsoft <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Huawei <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">HTC <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Honor <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Haier <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Google <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Infinix <i class="fa fa-angle-right mt-1"></i></a></li>
+        </ul>
+        <div class="side-nav-head">Network</div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="devices.html">3G Network Mobiles <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">4G Network Mobiles <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">5G Network Mobiles <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+        </ul>
+        <div class="side-nav-head">Price Range</div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="devices.html">Greater then 50,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">40,000 - 50,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">30,000 - 40,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">20,000 - 30,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">10,000 - 20,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">Less then 10,000 <i
+                        class="fa fa-angle-right mt-1"></i></a></li>
+        </ul>
+        <div class="side-nav-head">RAM</div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="devices.html">512 MB RAM <i class="fa fa-angle-right mt-1"></i></a>
+            </li>
+            <li class="list-group-item"><a href="devices.html">1 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">2 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">4 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">6 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">8 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">10 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">12 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+            <li class="list-group-item"><a href="devices.html">16 GB RAM <i class="fa fa-angle-right mt-1"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-10 col-sm-12 col-xs-12 float-right main">
+        <h4 class="ml-3 mr-3 border-bottom pb-2 mt-3">Samsung Mobiles</h4>
+        <div class="row m-0">
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <div class="border text-center rounded pt-3">
+                    <img src="a51thumb.jpg" width="75" height="100">
+                    <div class="mt-3">
+                        Galaxy A51
+                        <h5><span class="badge badge-danger mt-1">Rs. 113,999</span></h5>
+                        <div><i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
